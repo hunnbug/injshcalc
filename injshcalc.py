@@ -22,25 +22,25 @@ while work == True:
 
         if deystv == 1:
             num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите первое число: ")))
+            num2 = float(input(("введите второе число: ")))
             answer = num1 + num2
             print("ваш результат: " + str(answer))
 
         elif deystv == 2:
             num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите первое число: ")))
+            num2 = float(input(("введите второе число: ")))
             answer = num1 - num2
             print("ваш результат: " + str(answer))
 
         elif deystv == 3:
             num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите первое число: ")))
+            num2 = float(input(("введите второе число: ")))
             answer = num1 * num2
             print("ваш результат: " + str(answer))
 
         elif deystv == 4:
             num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите первое число: ")))
+            num2 = float(input(("введите второе число: ")))
             answer = num1 / num2
             print("ваш результат: " + str(answer))
 
