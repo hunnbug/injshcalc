@@ -1,5 +1,56 @@
 import math
 work = True
+def sloj():
+    num1 = float(input(("введите первое число: ")))
+    num2 = float(input(("введите второе число: ")))
+    answer = num1 + num2
+    print("ваш результат: " + str(answer))
+def minus():
+    num1 = float(input(("введите первое число: ")))
+    num2 = float(input(("введите второе число: ")))
+    answer = num1 - num2
+    print("ваш результат: " + str(answer))
+def umnoj():
+    num1 = float(input(("введите первое число: ")))
+    num2 = float(input(("введите второе число: ")))
+    answer = num1 * num2
+    print("ваш результат: " + str(answer))
+def deli():
+    num1 = float(input(("введите первое число: ")))
+    num2 = float(input(("введите второе число: ")))
+    answer = num1 / num2
+    print("ваш результат: " + str(answer))
+def stepen():
+    num1 = float(input(("введите число ")))
+    num2 = float(input(("введите показатель степени: ")))
+    answer = num1**num2
+    print("ваш результат: " + str(answer))
+def koren():
+    num1 = float(input(("введите число: ")))
+    answer = math.sqrt(num1)
+    print("ваш результат: " + str(answer))
+def factorial():
+        num1 = int(input(("введите число: ")))
+        fact = 1
+        for i in range(num1):
+            i = i + 1
+            fact = fact * i
+        print("ваш результат: " + str(fact))
+def sinus():
+    num1 = float(input(("введите величину противолежащего катета: ")))
+    num2 = float(input(("введите величину гипотенузы: ")))
+    answer = num1 / num2
+    print("ваш результат: " + str(answer))
+def cos():
+    num1 = float(input(("введите величину прилежащего катета: ")))
+    num2 = float(input(("введите величину гипотенузы: ")))
+    answer = num1 / num2
+    print("ваш результат: " + str(answer))
+def tan():
+    num1 = float(input(("введите величину противолежащего катета ")))
+    num2 = float(input(("введите величину прилежащего катета: ")))
+    answer = num1 / num2
+    print("ваш результат: " + str(answer))  
 while work == True:
     try:
         print(" ")
@@ -21,67 +72,37 @@ while work == True:
         deystv = int(a)
 
         if deystv == 1:
-            num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите второе число: ")))
-            answer = num1 + num2
-            print("ваш результат: " + str(answer))
+            sloj()
 
         elif deystv == 2:
-            num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите второе число: ")))
-            answer = num1 - num2
-            print("ваш результат: " + str(answer))
+            minus()
 
         elif deystv == 3:
-            num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите второе число: ")))
-            answer = num1 * num2
-            print("ваш результат: " + str(answer))
+            umnoj()
 
         elif deystv == 4:
-            num1 = float(input(("введите первое число: ")))
-            num2 = float(input(("введите второе число: ")))
-            answer = num1 / num2
-            print("ваш результат: " + str(answer))
+            deli()
 
         elif deystv == 5:
-            num1 = float(input(("введите число ")))
-            num2 = float(input(("введите показатель степени: ")))
-            answer = num1**num2
-            print("ваш результат: " + str(answer))
+            stepen()
 
         elif deystv == 6:
-            num1 = float(input(("введите число: ")))
-            answer = math.sqrt(num1)
-            print("ваш результат: " + str(answer))
+            koren()
 
         elif deystv == 7:
-            num1 = int(input(("введите число: ")))
-            fact = 1
-            for i in range(num1):
-                i = i + 1
-                fact = fact * i
-            print("ваш результат: " + str(fact))
+            factorial()
 
         elif deystv == 8:
-            num1 = float(input(("введите величину противолежащего катета: ")))
-            num2 = float(input(("введите величину гипотенузы: ")))
-            answer = num1 / num2
-            print("ваш результат: " + str(answer))
+            sinus()
 
         elif deystv == 9:
-            num1 = float(input(("введите величину прилежащего катета: ")))
-            num2 = float(input(("введите величину гипотенузы: ")))
-            answer = num1 / num2
-            print("ваш результат: " + str(answer))
+            cos()
 
         elif deystv == 10:
-            num1 = float(input(("введите величину противолежащего катета ")))
-            num2 = float(input(("введите величину прилежащего катета: ")))
-            answer = num1 / num2
-            print("ваш результат: " + str(answer))
+            tan()
+
         elif deystv == 11:
-            work = False
+            break
     except:
         print(" ")
         print("ошибка 6, пиши по человечески")
